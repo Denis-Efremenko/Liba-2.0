@@ -1,0 +1,30 @@
+﻿<Page x:Class="Biblioteka.Vid_page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Biblioteka"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Vid_page" Width="1000" Height="650">
+
+    <Grid Width="1000" Height="650" Background="#FFEEEEEE">
+        <Image HorizontalAlignment="Left" Height="650" VerticalAlignment="Top" Width="1000" Source="1588415631_9-p-foni-s-raskritimi-knigami-57.jpg"/>
+
+        <DataGrid x:Name="table_vid_book_DG" HorizontalAlignment="Left" Height="295" Margin="100,50,0,0" VerticalAlignment="Top" Width="800" AutoGeneratingColumn="table_vid_book_DG_AutoGeneratingColumn"/>
+        <Label Content="Операции с книгами" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" FontSize="34" FontWeight="Bold"/>
+        <Button x:Name="all_data_button" Content="Все данные" HorizontalAlignment="Left" Margin="100,600,0,0" VerticalAlignment="Top" Width="250" FontSize="20" Height="35" Click="all_data_button_Click" Background="#FF3CC8FF" FontWeight="Bold"/>
+        <Button x:Name="give_button" Content="Выдать книгу" HorizontalAlignment="Left" Margin="100,540,0,0" VerticalAlignment="Top" Width="250" FontSize="20" Height="35" Click="give_button_Click" Background="#FF3CC8FF" FontWeight="Bold"/>
+        <Button x:Name="return_book" Content="Получить книгу" HorizontalAlignment="Left" Margin="375,540,0,0" VerticalAlignment="Top" Width="250" FontSize="20" Height="35" RenderTransformOrigin="0.487,0.43" Click="return_book_Click" Background="#FF3CC8FF" FontWeight="Bold"/>
+        <Label Content="Название/Код книги:" HorizontalAlignment="Left" Margin="100,344,0,0" VerticalAlignment="Top" FontSize="20" Width="409" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+        <Label Content="ФИО/Код читателя:" HorizontalAlignment="Left" Margin="524,347.06,0,0" VerticalAlignment="Top" FontSize="20" Width="376" HorizontalContentAlignment="Center" Foreground="Black" FontWeight="Bold"/>
+        <Button x:Name="person_sanc_button" Content="Отчёт о штрафах" HorizontalAlignment="Left" Margin="650,540,0,0" VerticalAlignment="Top" Width="250" FontSize="20" Height="35" Click="person_sanc_button_Click" Background="#FF3CC8FF" FontWeight="Bold" />
+        <Label Content="Название/Код штрфа:" HorizontalAlignment="Left" Margin="100,432.576,0,0" VerticalAlignment="Top" FontSize="20" Width="409" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+        <Button x:Name="not_return_book_button" Content="Выданые книги" HorizontalAlignment="Left" Margin="375,600,0,0" VerticalAlignment="Top" Width="250" FontSize="20" Height="35" Click="not_return_book_button_Click" Background="#FF3CC8FF" FontWeight="Bold" />
+        <Button x:Name="clear_button" Content="Очистить поля" HorizontalAlignment="Left" Margin="650,600,0,0" VerticalAlignment="Top" Width="250" FontSize="20" Height="35" Click="clear_button_Click" Background="#FF3CC8FF" FontWeight="Bold" />
+        <TextBox x:Name="book_tb" HorizontalAlignment="Left" Height="32" Margin="100,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="409" FontSize="20"/>
+        <TextBox x:Name="name_tb" HorizontalAlignment="Left" Height="32" Margin="524,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376" FontSize="20"/>
+        <TextBox x:Name="sanc_tb" HorizontalAlignment="Left" Height="32" Margin="100,471.516,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="409" FontSize="20"/>
+
+    </Grid>
+</Page>

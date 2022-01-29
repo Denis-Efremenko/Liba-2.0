@@ -1,0 +1,28 @@
+﻿<Page x:Class="Biblioteka.Person_page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Biblioteka"
+      mc:Ignorable="d" 
+      d:DesignHeight="450"
+      Title="Person_page" Width="1000" Height="650">
+
+    <Grid Background="#FFEEEEEE" Height="650" Margin="0,0,0,0" Width="1000">
+        <Image Height="650" Margin="0,0,0,0" VerticalAlignment="Top" Source="36023c62c23357577272011bdc67eda4.jpg" HorizontalAlignment="Left" Width="1000"/>
+        <DataGrid x:Name="table_person_DG" HorizontalAlignment="Center" Height="400" Margin="0,50,0,0" VerticalAlignment="Top" Width="800"/>
+        <Button x:Name="save_changes" Content="Сохранить " HorizontalAlignment="Left" Margin="497,577,0,0" VerticalAlignment="Top" Width="180" Click="save_changes_Click" FontSize="24" Background="#FF64FF00" FontWeight="Bold" Height="34"/>
+        <Button x:Name="not_save_changes" Content="Не сохранять" HorizontalAlignment="Left" Margin="682,577,0,0" VerticalAlignment="Top" Width="180" Click="not_save_changes_Click" FontSize="24" Background="Red" FontWeight="Bold" Height="34"/>
+        <Button Content="Поиск" Margin="127,577,693,0" VerticalAlignment="Top" Width="180" Click="Button_Click" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Background="#FF3CC8FF" Height="34"/>
+        <Label Content="Читатели" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" FontSize="34" FontWeight="Bold"/>
+        <Label Content="Код" HorizontalAlignment="Left" Margin="102,456,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" Width="74" Height="58" VerticalContentAlignment="Center" Background="#70FFFFFF"/>
+        <Label Content="ФИО" HorizontalAlignment="Left" Margin="182,456,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Width="300" HorizontalContentAlignment="Center" Height="58" VerticalContentAlignment="Center" Background="#70FFFFFF"/>
+        <Label Content="Адрес" HorizontalAlignment="Left" Margin="487,456,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" Width="250" Height="58" VerticalContentAlignment="Center" Background="#70FFFFFF"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="742,456,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" HorizontalContentAlignment="Center" Width="158" Height="58" VerticalContentAlignment="Center" Background="#70FFFFFF"/>
+        <TextBox x:Name="kod_tb" HorizontalAlignment="Left" Margin="102,518,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontSize="16"/>
+        <TextBox x:Name="name_tb" HorizontalAlignment="Left" Margin="182,518,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" FontSize="16"/>
+        <TextBox x:Name="address_tb" HorizontalAlignment="Left" Margin="487,518,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontSize="16"/>
+        <TextBox x:Name="tel_tb" HorizontalAlignment="Left" Margin="742,518,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" FontSize="16"/>
+        <Button Content="Очистить поля" HorizontalAlignment="Left" Margin="312,0,0,39" VerticalAlignment="Bottom" FontSize="24" FontWeight="Bold" Background="#FF3CC8FF" OpacityMask="Black" Width="180" Height="34" Click="Button_Click_2"/>
+    </Grid>
+</Page>
